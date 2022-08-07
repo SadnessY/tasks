@@ -45,6 +45,7 @@
 		url('../fonts/futuralightc.svg#futuralightc') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 body {
+  width: 1440px;
   background-color: #F2F7FC;
 }
 .add-to-cart {
@@ -52,15 +53,12 @@ body {
   box-sizing: border-box;
   width: 221px;
   height: 49px;
-  left: 100px;
   border-radius: 10px;
   text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
   color: #BD0202;
-  margin-top: 15px;
   font-family: "Conv_FreeSetC";
 }
 .info h3 {
@@ -68,43 +66,70 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  width: 92%;
   color: #000000;
 }
-.product {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
-  box-sizing: border-box;
+.container-products {
+  justify-content: space-around;
+  display: flex;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.product-card {
   width: 263px;
   height: 433px;
   background: #FFFFFF;
   border: 1px solid #E9ECEE;
   border-radius: 10px;
+  flex-basis: 263px 433px;
 }
-.price {
+.popular-products {
   display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 20px;
+}
+.go-to-shop {
+  margin-top: 40px;
+  width: 132px;
+  height: 35px;
+  border: 1px solid #9AA2A9;
+  border-radius: 5px;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #232323;
+}
+.go-to-shop img {
+  margin-left: 10px;
+  margin-bottom: 1px;
+}
+.product-price {
   font-size: 20px;
   font-weight: bold;
-  padding-top: 20px;
   font-family: "Conv_Freesetdemic";
   display: inline-block;
+  margin-bottom: 30px;
 }
-.image {
+.product-image {
   display: flex;
   width: 263px;
   height: 200px;
+  border-radius: 10px 10px 0px 0px;
 }
-.info {
+.product-info {
   margin-left: 10px;
+  width: 80%;
 }
-.info p {
+.product-info p {
   font-family: 'Conv_FreeSetC';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.5)
+  color: rgba(0, 0, 0, 0.5);
 }
 #platki {
   text-decoration: underline;
@@ -118,21 +143,9 @@ body {
   border: none;
   color: rgba(0, 0, 0, 0.5)
 }
-.added-to-cart {
+.btn-clicked {
   border: 1px solid #E9ECEE;
-  box-sizing: border-box;
-  width: 221px;
-  height: 49px;
-  left: 100px;
-  border-radius: 10px;
-  text-align: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
   color: #9AA2A9;
-  margin-top: 15px;
-  font-family: "Conv_FreeSetC";
 }
 ion-icon {
   width: 20px;
@@ -141,30 +154,167 @@ ion-icon {
 .price-sale {
   display: inline-block;
   font-size: 21px;
-  padding-top: 14px;
   font-family: "Conv_FreeSetC";
   text-decoration: line-through;
   color: rgba(0, 0, 0, 0.5);
   padding-left: 10px;
 }
-.img {
-  width: 100%;
-  background-color: white;
-}
 .new {
+  box-sizing: border-box;
+  display: flex;
   position: relative;
-  bottom: 140px;
-  left: 28px;
+  right: 240px;
+  top: 68px;
   width: 53px;
   height: 18px;
-  font-size: 11px;
-  color: #FFFFFF;
-  border: 53px 18px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #005C9C;
-  border-radius: 100px;
+  border-radius: 100px;;
+}
+.new p {
+  box-sizing: border-box;
+  position: relative;
+  bottom: 10px;
   text-align: center;
   font-style: normal;
   font-family: 'FuturaLightC';
   font-weight: 100;
-  line-height: 12.45px;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+.tour-container, .excursion-container, .hotel-container {
+  display: flex;
+  margin-left: 120px;
+  margin-right: 120px;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.tour-card-info h1, .excursion-card-info h1, .hotel-card-info h1 {
+  font-size: 24px;
+  width: 80%;
+  font-family: "Conv_Freesetdemic";
+}
+.tour-info p, .excursion-info p, .hotel-info p{
+  width: 250px;
+  height: 123px;
+  padding-right: 50px;
+  font-size: 16px;
+  color: #707070;
+}
+.tour-info h1, .excursion-info h1, .hotel-info h1{
+  margin-top: 100px;
+}
+.buy-tour-btn, .buy-excursion-btn, .more-hotel-btn{
+  width: 199px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Conv_Freesetdemic";
+  margin-top: 230px;
+}
+.tour-card, .excursion-card, .hotel-card {
+  display: flex;
+  width: 262px;
+  height: 400px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+.tour-card-info, .excursion-card-info, .hotel-card-info {
+  padding-left: 30px;
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: 14px;
+}
+.excursion-card-info p, .hotel-card-info p {
+  width: 80%;
+}
+.bg-img-tent {
+  background: url(patrick-hendry-eDgUyGu93Yw-unsplash1.png);
+  border-radius: 10px;
+}
+.bg-img-golubino {
+  width: 100%;
+  background: url(casey-schackow-meI9Aa1wlw0-unsplash1.png);
+  border-radius: 10px;
+}
+.bg-img-fishing {
+  width: 100%;
+  background-image: url(vidar-nordli-mathisen-yJKb_4vjYwA-unsplash1.png);
+  border-radius: 10px;
+}
+.bg-img-monastery {
+  background-image: url(1577931031.png);
+  width: 100%;
+  border-radius: 10px;
+
+}
+.bg-img-fortress {
+  background-image: url(1667144131.png);
+  width: 100%;
+  border-radius: 10px;
+}
+.bg-img-ice_caves {
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(2610117001.png);
+}
+.bg-img-hotel1 {
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(simon-rae-t4NvUGv1834-unsplash1.png);
+}
+.bg-img-hotel2 {
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(joseph-albanese-xx0oSB1YxRE-unsplash1.png);
+}
+.bg-img-familyhotel2 {
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(patrick-perkins-3wylDrjxH-E-unsplash1.png);
+}
+.order-4 {
+  order: 4;
+  padding-left: 50px;
+}
+.blue-line {
+  height: 10px;
+  background: #005C9C;
+  opacity: 0.15; 
+}
+.left-arrow, .right-arrow {
+  width: 30px;
+  height: 20px;
+  display: inline-flex;
+  cursor: pointer;
+}
+.left-arrow::before, .left-arrow::after, .right-arrow::before, .right-arrow::after {
+  content: "";
+  position: absolute;
+}
+.left-arrow::before, .right-arrow::before {
+  width: 27px;
+  height: 1px;
+  background-color: #000000;
+  margin-top: 3px;
+}
+.left-arrow::after {
+  display: flex;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  transform: rotate(-45deg);
+}
+.left-arrow::after, .right-arrow::after {
+  width: 5px;
+  height: 5px;
+}
+.right-arrow::after {
+  display: flex;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  transform: rotate(-45deg);
+  margin-left: 19px;
 }
