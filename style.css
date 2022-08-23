@@ -46,6 +46,7 @@
 }
 body {
   width: 1440px;
+  margin: 0 auto;
   background-color: #F2F7FC;
 }
 .add-to-cart {
@@ -183,12 +184,129 @@ ion-icon {
   font-size: 11px;
   color: #FFFFFF;
 }
+.welcome-page-container>header>p {
+  position: relative;
+  bottom: 51px;
+  left: 630px;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.welcome-page-header-menu {
+  position: relative;
+  bottom: 85px;
+  left: 824px;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 500px;
+  margin-right: 0;
+}
+.cart-and-profile {
+  width: 100px;
+  bottom: 102px;
+  position: relative;
+  left: 1250px;
+  color: #FFFFFF;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+}
+#number-1-around-cart {
+  position: relative;
+  bottom: 4px;
+  left: 2px;
+}
+.welcome-page-header-menu>li{
+  display: inline-block;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.welcome-page-menu {
+  position: relative;
+  left: 475px;
+  bottom: 50px;
+  width: 900px;
+}
+.welcome-page-menu>li>img {
+  position: relative;
+  bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.welcome-page-menu>li {
+  display: inline-block;
+  font-family: 'Conv_FreeSetDemiC';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.462604px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.welcome-page-container>header>img {
+  position: relative;
+  bottom: 20px;
+  left: 1200px;
+}
+.welcome-page-container>header>span>img {
+  position: relative;
+  right: 4px;
+  top: 2px;
+}
+#onega-logo {
+  width: 150px;
+  height: 63px;
+  position: relative;
+  top: 70px;
+  right: 825px;
+}
+.social-icons {
+  position: relative;
+  left: 275px;
+  bottom: 18px;
+}
+#vk {
+  margin-bottom: 3px;
+}
+#sova {
+  margin-bottom: 3px;
+}
+.phone-number {
+  color: #FFFFFF;
+  font-size: 19px;
+}
+.welcome-page-container {
+  width: 1440px;
+  height: 850px;
+  background-image: url(hero_bg.png);
+  display: flex;
+}
+.welcome-page-container h1 {
+  position: relative;
+  top: 225px;
+  right: 550px;
+  font-family: 'Conv_Freesetdemic2';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  color: #FFFFFF;
+  text-align: center;
+}
 .tour-container, .excursion-container, .hotel-container {
   display: flex;
   margin-left: 120px;
   margin-right: 120px;
   justify-content: space-around;
   margin-bottom: 100px;
+  position: relative;
+  bottom: 70px;
 }
 .tour-card-info h1, .excursion-card-info h1, .hotel-card-info h1 {
   font-size: 24px;
@@ -317,4 +435,280 @@ ion-icon {
   border-right: 2px solid #000000;
   transform: rotate(-45deg);
   margin-left: 19px;
+}
+.news {
+  margin-top: 5px;
+  margin-left: 50px;
+  font-family: "Conv_FreeSetDemiC";
+}
+.news-card {
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+}
+.news-card>img {
+  position: relative;
+  right: 20px;
+}
+.news-card>p {
+  font-size: 12px;
+  opacity: 0.5;
+  color: #232323;
+}
+.news-card>h4 {
+  width: 200px;
+}
+#vegan-img {
+  position: relative;
+  top: 15px;
+}
+.news>h1>button {
+  position: relative;
+  left: 770px;
+  bottom: 50px;
+  border: none;
+}
+.onega-story-and-news-container {
+  margin-left: 140px;
+  display: flex;
+}
+.onega-story>button {
+  border: none;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.onega-story>p {
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 263px;
+  margin-bottom: 30px;
+}
+.onega-story>h1 {
+  font-family: "Conv_FreeSetDemiC";
+  font-size: 34px;
+  color: #232323;
+  margin-bottom: 50px;
+}
+footer {
+  display: flex;
+  height: 508px;
+  width: 1440px;
+  background-color: #232323;
+  font-family: "Conv_FreeSetDemiC";
+}
+footer>.onega>p {
+  margin-left: 120px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#footer-fn {
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+  width: 200px;
+  font-size: 22px;
+  font-family: "Conv_FreeSetC";
+}
+#footer-onega-logo {
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.phone-icon {
+  margin-right: 5px;
+}
+#footer-phone-icon {
+  position: relative;
+  right: 140px;
+  top: 25px;
+  
+}
+#email-link {
+  text-decoration: underline;
+  margin-left: 120px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Conv_FreeSetC";
+}
+.expect-for-news, .onega {
+  display: inline-block;
+}
+.expect-for-news {
+  position: relative;
+  left: 100px;
+  top: 40px;
+  color: #FFFFFF;
+}
+.subscribe-to-news {
+  opacity: 0.5;
+  width: 262px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+.subscribe-to-news img {
+  position: relative;
+  bottom: 45px;
+  left: 230px;
+}
+.subscribe-to-news h3 {
+  position: relative;
+  bottom: 4px;
+  left: 20px;
+}
+.expect-for-news h6 {
+  width: 230px;
+  position: relative;
+  bottom: 20px;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.expect-for-news>h3 {
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 30px;
+}
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+}
+.icon img {
+  position: relative;
+  top: 12px;
+}
+.links {
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 200px;
+}
+.links-block {
+  width: 261px;
+  height: 233px;
+}
+.second-links-block {
+  position: relative;
+  left: 310px;
+  bottom: 235px;
+}
+.links h3 {
+  font-family: 'FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding-bottom: 33px;
+  width: 575px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.links li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  font-family: 'FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.links img {
+  position: relative;
+  left: 258px;
+  bottom: 35px;
+}
+footer>span {
+  width: 1440px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  top: 460px;
+  right: 550px;
+  font-family: 'Conv_FreeSetC';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (max-width: 1000px) {
+  body {
+    width: 500px;
+  }
+  .tour-container, .container-products, .hotel-container, .excursion-container, .welcome-page-container, .onega-story-and-news-container, footer {
+    width: 376px;
+    display: inline-block;
+  }
+  .welcome-page-container h1 {
+    position: relative;
+    bottom: 100px;
+  }
+  .welcome-page-container {
+    background-image: url(ekaterina-sazonova-PoQYDgPfx8I-unsplash1.png);
+    position: relative;
+    width: 375px;
+    height: 376px;
+    right: 240px;
+  }
+  .tour-card, .hotel-card, .product-card, .excursion-card {
+    margin-top: 20px;
+    position: relative;
+    right: 300px;
+  }
+  .tour-card {
+    position: relative;
+  }
+  .excursion-info, .tour-info, .hotel-info {
+    position: relative;
+    right: 295px;
+  }
+  .excursion-info {
+    right: 345px;
+  }
+  .phone-number {
+    position: relative;
+    right: 100px;
+  }
+  .popular-products {
+    position: relative;
+    right: 320px;
+  }
+  .go-to-shop {
+    position: relative;
+    height: 100px;
+    top: 50px;
+    right: 200px;
+    margin-bottom: 50px;
+  }
+  footer {
+    position: relative;
+    width: 375px;
+    height: 750px;
+    right: 240px;
+  }
+  .onega-story-and-news-container {
+    position: relative;
+    right: 315px;
+    margin-top: 50px;
+  }
+  .onega-story {
+    margin-bottom: 50px;
+  }
+  .news {
+    position: relative;
+    right: 50px;
+  }
 }
